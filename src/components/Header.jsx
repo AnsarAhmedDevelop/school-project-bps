@@ -23,16 +23,16 @@ function Header() {
             </div>
             {/* navigation */}
             <nav className='bg-primary '>
-                <ul className={`container  w-11/12 mx-auto divide-y-2 sm:divide-y-0 divide-white sm:flex flex-col sm:flex-row items-center gap-x-5 py-2 text-white ${open?"block":"hidden"}`}>
-                    <Link to="/"><li onClick={()=>setOpen(!open)}>Home</li></Link>
-                    <Link to="/about"><li onClick={()=>setOpen(!open)}>About Us</li></Link>
-                    <Link to="/admission"><li onClick={()=>setOpen(!open)}>Admission</li></Link>
-                    <Link to="/mandatory-public-disclosure"><li onClick={()=>setOpen(!open)}>Mandatory Public Disclosure</li></Link>
-                    <Link to="/academic"><li onClick={()=>setOpen(!open)}>Academic</li></Link>
-                    <Link to="/achievement"><li onClick={()=>setOpen(!open)}>Achievement</li></Link>
-                    <Link to="/infrastructure"><li onClick={()=>setOpen(!open)}>Infrastructure</li></Link>
-                    <Link to="/gallery"><li onClick={()=>setOpen(!open)}>Gallery</li></Link>
-                    <Link to="/contact"><li onClick={()=>setOpen(!open)}>Contact Us</li></Link>
+                <ul className={`container  w-11/12 mx-auto  divide-white sm:flex flex-col sm:flex-row items-center justify-between divide-y-2 sm:divide-y-0 gap-x-5 py-2 text-white ${open?"block":"hidden"}`}>
+                    <Link to="/"><li className='sm:border-0 border-b-2 border-white sm:py-0 font-semibold py-2' onClick={()=>setOpen(!open)}>Home</li></Link>
+                    <Link to="/about"><li className='sm:border-0 border-b-2 border-white sm:py-0 font-semibold py-2' onClick={()=>setOpen(!open)}>About Us</li></Link>
+                    <Link to="/admission"><li className='sm:border-0 border-b-2 border-white sm:py-0 font-semibold py-2' onClick={()=>setOpen(!open)}>Admission</li></Link>
+                    <Link to="/mandatory-public-disclosure"><li className='sm:border-0 border-b-2 border-white sm:py-0 font-semibold py-2' onClick={()=>setOpen(!open)}>Mandatory Public Disclosure</li></Link>
+                    <Link to="/academic"><li className='sm:border-0 border-b-2 border-white sm:py-0 font-semibold py-2' onClick={()=>setOpen(!open)}>Academic</li></Link>
+                    <Link to="/achievement"><li className='sm:border-0 border-b-2 border-white sm:py-0 font-semibold py-2' onClick={()=>setOpen(!open)}>Achievement</li></Link>
+                    <Link to="/infrastructure"><li className='sm:border-0 border-b-2 border-white sm:py-0 font-semibold py-2' onClick={()=>setOpen(!open)}>Infrastructure</li></Link>
+                    <Link to="/gallery"><li className='sm:border-0 border-b-2 border-white sm:py-0 font-semibold py-2' onClick={()=>setOpen(!open)}>Gallery</li></Link>
+                    <Link to="/contact"><li className=' sm:py-0 font-semibold py-2' onClick={()=>setOpen(!open)}>Contact Us</li></Link>
                 </ul>
                
             </nav>

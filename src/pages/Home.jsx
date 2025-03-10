@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Slider from '../components/Slider'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Home() {
+  useEffect(() => {
+    AOS.init({
+      once: false,
+      mirror: true,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <div className=''>
       {/* Slider */}
@@ -11,17 +21,25 @@ function Home() {
         <div className="flex gap-x-5 justify-between">
           <div className="">
             <img
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
               alt=""
               src="./images/home/home-welcome-1.jpg"
-              className="mr-10 hover:scale-110 transition duration-300 mt-10"
+              className="mr-10 hover:scale-110 transition duration-1000 ease-in-out mt-10"
+             
 
             />
           </div>
           <div className="">
             <img
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
               alt=""
               src="./images/home/home-welcome-2.jpg"
-              className="mr-10 hover:scale-110 transition duration-300"
+              className="mr-10 hover:scale-110 transition duration-1000 ease-in-out"
+             
 
             />
           </div>
@@ -29,6 +47,9 @@ function Home() {
         <div className="p-5 sm:p-14 text-center">
           <h2
             className="text-red-700 text-2xl sm:text-3xl font-serif font-bold leading-normal mb-2"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
 
           >
             Welcome to <br />
@@ -36,6 +57,9 @@ function Home() {
           </h2>
           <p
             className="text-gray-500"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out"
 
           >
             Welcome to the abode of intellect where the purpose of education is
@@ -52,7 +76,9 @@ function Home() {
       <div className="py-5 sm:py-10 bg-[#eee]">
         <h2
           className=" text-primary text-2xl sm:text-3xl font-serif font-bold leading-normal text-center py-5 "
-
+          data-aos="fade-down"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
         >
           School Virtual Tour
         </h2>
@@ -74,7 +100,11 @@ function Home() {
       <div className='bg-[url(/images/home/bg-building.jpg)] bg-no-repeat bg-cover'>
         <div className='container mx-auto grid  grid-cols-1 sm:grid-cols-2 py-10' >
           <div></div>
-          <div className='bg-primary/90 opacity-80 p-7 text-white'>
+          <div 
+               data-aos="fade-in"
+               data-aos-duration="2000"
+               data-aos-easing="ease-in-out"
+          className='bg-primary/90 opacity-80 p-7 text-white'>
             <h2 className='font-bold text-4xl mb-5'>Our Mission</h2>
             <p className='text-justify'>We seek to make our children confident and creative builders of their future. Our focus is on the child as a whole entity. We work towards an integrated curriculum that reaches across disciplines and age levels. The students will be encouraged to meet academics challenges with openness, enthusiasm and willingness to solve problems. We strive to inspire our students to achieve the highest standards of intellectual and personal development through a satisfactory and stimulating and comprehensive programme. We aim for an atmosphere of cooperation and endeavour to create compassionate, responsible and innovative global citizens, committed to the development of India and the world.</p>
 
